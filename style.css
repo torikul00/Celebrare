@@ -53,12 +53,13 @@ nav {
     width: 90%;
     position: absolute;
     padding: 40px 100px;
-    height: 450px;
+    height: 500px;
     top: 100px;
     left: 50%;
     transform: translate(-50%);
     border-radius: 50px;
     background-color: white;
+    border: 1px solid black;
 }
 
 .content {
@@ -68,15 +69,15 @@ nav {
 }
 
 .carousel-container {
-    width: 60%;
-    background-color: black;
+    width: 70%;
+    background-color: rgba(180, 147, 147, 0.26);
     height: 100%;
 }
 .card-info-container{
-    width: 40%;
+    width: 30%;
     height: 100%;
     margin-left: 20px;
-    padding: 10px;
+    padding: 15px;
 }
 .card-title {
     text-align: center;
@@ -103,7 +104,8 @@ nav {
     height: 60px;
     background-color: black;
     color: white;
-    border-radius: 15px;
+    border-radius: 20px;
+    font-size: 18px;
 }
 .pricing del{
     font-size: 20px;
@@ -114,7 +116,7 @@ nav {
 }
 
 .featurs-container {
-    margin-top: 250px;
+    margin-top: 300px;
     margin-bottom: 50px;
 }
 
