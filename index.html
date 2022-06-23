@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <title>Celebrare</title>
 </head>
 
 <body>
     <nav>
+
         <div class="logo">
+            <i class="fa-solid fa-bars toggle-menu"></i>
             <img src="./assets/Logo.png" alt="">
         </div>
+
         <div class="nav-links">
             <a href="">Login</a></li>
             <a href="">Birthday Cards</a>
@@ -24,6 +29,7 @@
             <a href="">Login</a>
             <span>|</span>
             <a href="">Signup</a>
+
         </div>
     </nav>
 
@@ -33,9 +39,33 @@
             <h1 class="banner-title">Digital Card Details</h1>
             <div class="sub-banner-container">
                 <div class="content">
+
+
+                    <!-- carousel start -->
                     <div class="carousel-container">
-                        <!-- <img src="./assets/Page1.jpg" alt=""> -->
+
+
+
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="./assets/Page1.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/Page2.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="./assets/Page3.jpg" />
+                                </div>
+
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
                     </div>
+
+
+                    <!-- carusel end here -->
                     <div class="card-info-container">
                         <h1 class="card-title">Card Title</h1>
                         <div class="pricing">
@@ -63,7 +93,22 @@
         <div class="featurs-container">
             <h1>Features</h1>
             <div class="features">
+                <div class="feature-item">
+                    <img src="./assets/demo.png" alt="">
+                    <h2>Create your card
+                        in just 5 mins</h2>
+                </div>
+                <div class="feature-item">
+                    <img src="./assets/demo.png" alt="">
+                    <h2>Customize the Text
 
+                        with "Edit this Page" Option</h2>
+                </div>
+                <div class="feature-item">
+                    <img src="./assets/demo.png" alt="">
+                    <h2>Editing is available
+                        after purchase also</h2>
+                </div>
 
             </div>
 
@@ -71,6 +116,25 @@
 
     </main>
 
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 100,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
 
 </body>
 
